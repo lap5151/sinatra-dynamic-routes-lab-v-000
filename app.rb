@@ -16,7 +16,7 @@ class App < Sinatra::Base
     def say
       "#{params[:phrase]}"
     end
-    say*params[:number].to_i
+    say*3
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
