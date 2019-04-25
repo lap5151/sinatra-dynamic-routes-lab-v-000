@@ -17,7 +17,7 @@ class App < Sinatra::Base
       "#{params[:phrase]}"
     end
     say
-    params[:number].to_i
+    params[:number]
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
